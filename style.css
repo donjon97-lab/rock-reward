@@ -12,40 +12,72 @@ body {
   color: white;
 }
 
+/* BATU */
 #rockImage {
   width: 220px;
+
+  /* kondisi awal */
   opacity: 0;
-  transform: scale(0.3) rotate(-10deg);
-  animation: popIn 1s ease-out forwards;
-  filter: drop-shadow(0 0 25px gold);
+  transform: scale(0.5) translateY(30px);
+
+  /* animasi masuk */
+  animation:
+    rockEnter 0.9s ease-out forwards,
+    rockIdle 3s ease-in-out infinite;
+
+  animation-delay:
+    0s,
+    1s; /* idle mulai setelah enter */
+  
+  filter: drop-shadow(0 0 20px rgba(255,215,0,0.8));
 }
 
+/* TEKS */
 #resultText {
   margin-top: 15px;
   font-size: 22px;
+
   opacity: 0;
-  animation: fadeUp 0.8s ease-out forwards;
-  animation-delay: 0.9s;
+  animation: textFadeUp 0.6s ease-out forwards;
+  animation-delay: 0.8s;
 }
 
-@keyframes popIn {
+/* ===================== */
+/* KEYFRAMES */
+/* ===================== */
+
+@keyframes rockEnter {
   0% {
     opacity: 0;
-    transform: scale(0.3) rotate(-15deg);
+    transform: scale(0.5) translateY(40px);
   }
   70% {
     opacity: 1;
-    transform: scale(1.1) rotate(3deg);
+    transform: scale(1.08) translateY(-5px);
   }
   100% {
-    transform: scale(1) rotate(0);
+    opacity: 1;
+    transform: scale(1) translateY(0);
   }
 }
 
-@keyframes fadeUp {
+/* animasi idle (TETAP ADA) */
+@keyframes rockIdle {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes textFadeUp {
   from {
     opacity: 0;
-    transform: translateY(15px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
