@@ -1,0 +1,17 @@
+[
+  {
+    "id": "rock001",
+    "rockName": "Ruby Stone",
+    "imgUrl": "https://cdn.discordapp.com/attachments/1456703650494681332/1456703728475312240/c6e1228e-2232-4e5a-967d-b6a2257ff0a9-removebg-preview.png?ex=69595491&is=69580311&hm=e3debd458e186f16457fbb9231ca69d95feb885285736fd78085bdcb42af53c7&"
+  },
+  {
+    "id": "rock002",
+    "rockName": "Sapphire Rock",
+    "imgUrl": "https://cdn.discordapp.com/attachments/1456703650494681332/1456703752429113364/Pistol.png?ex=69595496&is=69580316&hm=9fe4d1b5c3df8d67bc22007785db7de676bf8a0ac194c6211864ad76b9a2b845&"
+  },
+  {
+    "id": "rock003",
+    "rockName": "Emerald Stone",
+    "imgUrl": "https://cdn.discordapp.com/attachments/1456703650494681332/1456703859631329463/whenn.png?ex=695954b0&is=69580330&hm=1ffd8b1de967dceaee7deff384185a33d4522fda63e1523e68b9b46c29e8fd46&"
+  }
+]

@@ -1,0 +1,58 @@
+body {
+  background: #0f0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+#container {
+  text-align: center;
+  color: white;
+}
+
+#rockImage {
+  width: 220px;
+  opacity: 0;
+  transform: scale(0.3) rotate(-10deg);
+  animation: popIn 1s ease-out forwards;
+  filter: drop-shadow(0 0 25px gold);
+}
+
+#resultText {
+  margin-top: 15px;
+  font-size: 22px;
+  opacity: 0;
+  animation: fadeUp 0.8s ease-out forwards;
+  animation-delay: 0.9s;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) rotate(-15deg);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.1) rotate(3deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hidden {
+  display: none;
+}
